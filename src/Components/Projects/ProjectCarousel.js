@@ -30,17 +30,25 @@ const headerStyle = {
   color: '#fff'
 }
 
-const linkStyle = {
+const linkStyleGreen = {
   color: '#52c41a',
   margin:'auto'
 }
 
-const linkStyle2 = {
+const linkStyleBlue = {
   color: '#1890ff',
   margin:'auto'
 }
 
+const linkStyleGold = {
+  color: '#faad14',
+  margin:'auto'
+}
 
+const linkStyleRed = {
+  color: '#f5222d',
+  margin:'auto'
+}
 
 
 const ProjectCarousel = () => {
@@ -92,9 +100,9 @@ const ProjectCarousel = () => {
             </Row>
             <Row >
               <br/>
-              <a  href='https://fe-dot-easycomp-demo.uc.r.appspot.com' style={linkStyle}>
+              <a  href='https://fe-dot-easycomp-demo.uc.r.appspot.com' style={linkStyleGreen}>
 
-              Click here to check out the EasyComp demo
+              EasyComp Demo
 
               </a>
 
@@ -153,11 +161,22 @@ const ProjectCarousel = () => {
           </Row>
           <Row >
             <br/>
-            <a  href='https://officerchess.herokuapp.com' style={linkStyle2}>
+            <a  href='https://officerchess.herokuapp.com' style={linkStyleGreen}>
 
-            Click here to play against the Chess AI
+            Chess AI
 
             </a>
+            <a  href='https://github.com/nofficer/chessbackend' style={linkStyleBlue}>
+
+            Chess Engine Repo
+
+            </a>
+            <a  href='https://github.com/nofficer/ChessFrontEnd' style={linkStyleRed}>
+
+            Chess Front-End Repo
+
+            </a>
+
 
           </Row>
 
