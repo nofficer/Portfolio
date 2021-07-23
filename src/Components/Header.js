@@ -3,24 +3,33 @@ import React from 'react';
 import { useHistory } from "react-router-dom";
 import { Menu } from 'antd';
 
+const headerStyle ={
+  backgroundColor: 'transparent',
+
+}
+
+const textStyle = {
+  color:'#262626'
+}
+
 
 const Header = () => {
   let history = useHistory();
 
   function handleClick(e) {
-    console.log(e)
+
     history.push('/' + e.key)
   }
 
   return (
-    <Menu onClick={handleClick} mode="horizontal">
-        <Menu.Item key="home">
+    <Menu theme='dark' style={headerStyle} onClick={handleClick} mode="horizontal">
+        <Menu.Item className='changeSelectedColor' style={textStyle} key="home">
           Home
         </Menu.Item>
-        <Menu.Item key="about">
+        <Menu.Item className='changeSelectedColor' style={textStyle} key="about">
           About Me
         </Menu.Item>
-        <Menu.Item key="projects">
+        <Menu.Item className='changeSelectedColor' style={textStyle} key="projects">
           Projects
         </Menu.Item>
           </Menu>

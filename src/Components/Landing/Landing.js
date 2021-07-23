@@ -2,11 +2,20 @@ import React from 'react';
 
 import { Row, Col } from 'antd';
 
+import '../../App.css'
+
+
+
+
+
 
 
 const headerStyle = {
   fontSize: '50px',
-  color: '#fff'
+  color: '#fa541c',
+  fontFamily:'Tourney',
+  width: '100vh',
+  marginTop:'4vh'
 }
 
 
@@ -14,14 +23,12 @@ const Landing = () => {
 
 
   return(
-    <div >
+    <div>
       <Row align='middle'>
+        <Col align='middle' span={8}><h1 style={headerStyle}>Welcome to the Nathan Officer Portfolio!</h1></Col>
         <Col align='middle' span={8}></Col>
-        <Col align='middle' span={8}><h1 style={headerStyle}>Hi, this is my portfolio website. It was built using react and deployed in GCP app engine.</h1></Col>
         <Col align='middle' span={8}></Col>
-        <Col align='middle' span={8}></Col>
-        <Col align='middle' span={8}><a href=''>Github Repo</a></Col>
-        <Col align='middle' span={8}></Col>
+
       </Row>
 
 

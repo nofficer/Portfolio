@@ -1,1 +1,44 @@
 @import '~antd/dist/antd.css';
+@import url('https://fonts.googleapis.com/css2?family=Tourney&display=swap');
+
+
+.ant-menu.ant-menu-dark .ant-menu-item-selected.changeSelectedColor {
+  opacity:0.5;
+  background-color: #08979c; /*Overriden property*/
+  border-radius:25px;
+}
+
+/*Changes the color of the header tabs */
+.ant-menu > .ant-menu-item.changeSelectedColor:hover,
+.ant-menu > .ant-menu-submenu:hover,
+.ant-menu > .ant-menu-item-active,
+.ant-menu> .ant-menu-submenu-active,
+.ant-menu > .ant-menu-item-open,
+.ant-menu> .ant-menu-submenu-open,
+.ant-menu > .ant-menu-item-selected,
+.ant-menu > .ant-menu-submenu-selected {
+  border-radius:25px;
+  background-color: #08979c;
+  color: #08979c;
+
+}
+
+/*Makes header tabs more oval shaped*/
+.ant-menu > .ant-menu-item {
+  border-radius:25px;
+}
+
+/*Makes about me div have a black background that is somewhat transparent so you can see the txt*/
+.AboutMeDiv {
+  border-radius:25px;
+  opacity:0.8;
+  color:white;
+
+  background-color:black;
+}
+
+.sectionHeader {
+  margin:10px;
+  font-size: 20px;
+  font-weight: bold;
+}

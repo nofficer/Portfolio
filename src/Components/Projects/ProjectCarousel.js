@@ -4,6 +4,7 @@ import { Row, Col } from 'antd';
 
 import ezcomp from './ezcomp-2.PNG'
 import officerchess from './officerchess.PNG'
+import portfolioPlaceholder from './portfolioPlaceholder.PNG'
 
 
 
@@ -14,6 +15,7 @@ const contentStyle = {
   margin:'5vh',
   textAlign: 'center',
   background: '#000000',
+  backgroundColor: 'transparent',
 };
 
 const textStyle = {
@@ -53,9 +55,9 @@ const linkStyleRed = {
 
 const ProjectCarousel = () => {
   return(
-    <Carousel effect='fade' autoplay>
+    <Carousel effect='slide' >
 
-      <div>
+      <div className='AboutMeDiv' >
         <h3 style={contentStyle}>
         <Row>
           {/*First give ourselves a bit of space*/}
@@ -105,6 +107,16 @@ const ProjectCarousel = () => {
               EasyComp Demo
 
               </a>
+              <a  href='https://github.com/nofficer/EasyComp_BE' style={linkStyleBlue}>
+
+              EasyComp Backend Repo
+
+              </a>
+              <a  href='https://github.com/nofficer/EasyComp_FrontEnd' style={linkStyleRed}>
+
+              EasyComp Front-End Repo
+
+              </a>
 
             </Row>
 
@@ -116,7 +128,7 @@ const ProjectCarousel = () => {
 
         </h3>
       </div>
-      <div>
+      <div className='AboutMeDiv'>
       <h3 style={contentStyle}>
       <Row>
         {/*First give ourselves a bit of space*/}
@@ -176,6 +188,70 @@ const ProjectCarousel = () => {
             Chess Front-End Repo
 
             </a>
+
+
+          </Row>
+
+        </Col>
+      </Row>
+
+
+
+      </h3>
+      </div>
+      <div className='AboutMeDiv'>
+      <h3 style={contentStyle}>
+      <Row>
+        {/*First give ourselves a bit of space*/}
+        <Col span={1}>
+        </Col>
+        {/*This is the image of the project*/}
+        <Col span={9}>
+
+
+
+        <Row>
+
+
+            <Image
+              style={imageStyle}
+              width={'100%'}
+              height={'100%'}
+              src={portfolioPlaceholder}
+            />
+
+        </Row>
+
+        </Col>
+        <Col span={2}>
+        </Col>
+      {  /*This is where the image of the project ends
+        Next is the project title and description*/}
+        <Col span={12}>
+          <Row>
+            <br/>
+
+
+          </Row>
+          <h2 style={headerStyle}>
+          This Portfolio
+          </h2>
+          <Row>
+
+          <p style={textStyle}>
+          The website you're currently browsing! Built with react and deployed on the Google Cloud Platform App Engine.
+          </p>
+
+          </Row>
+          <Row >
+            <br/>
+
+            <a  href='https://github.com/nofficer/portfolio' style={linkStyleBlue}>
+
+            Portfolio Repo
+
+            </a>
+
 
 
           </Row>
