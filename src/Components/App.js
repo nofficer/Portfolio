@@ -9,22 +9,13 @@ import '../App.css';
 import background from './Background.jpg'
 import Resume from './Resume/Resume'
 
-const backStyle = {
 
-  backgroundImage: `url(${background})`,
-  webkitBackgroundSize: 'cover',
-  mozBackgroundSize: 'cover',
-  oBackgroundSize: 'cover',
-  backgroundSize: 'cover',
-  height: '100vh',
-  backgroundPosition: 'top center'
-}
 
 
 const App = () => {
 
   return (
-    <div style={backStyle} >
+    <div className='backStyle'>
 
       <Router history={history}>
         <div >

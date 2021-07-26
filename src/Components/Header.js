@@ -32,7 +32,7 @@ const Header = () => {
   }
 
   return (
-    <Menu theme='dark' defaultSelectedKeys={[routeMap[pathLocation]]} style={headerStyle} onClick={handleClick} mode="horizontal">
+    <Menu  theme='light' defaultSelectedKeys={[routeMap[pathLocation]]} style={headerStyle} onClick={handleClick} mode="horizontal">
         <Menu.Item className='changeSelectedColor' style={textStyle} key="home">
           Home
         </Menu.Item>

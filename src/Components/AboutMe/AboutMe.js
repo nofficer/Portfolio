@@ -9,6 +9,7 @@ import officerfootball2 from './officer_football2.jpg'
 import linkedin from './linkedin.jpg'
 import officer from './officer2.jpg'
 
+import WindowSize from '../Util/WindowSize'
 
 
 const headerStyle = {
@@ -26,55 +27,107 @@ const imageStyle = {
 
 
 
+
+
 const AboutMe = () => {
+  var size = WindowSize()
+
+  var width = size.width
+
+  if(width>600){
+    return(
+      <div >
+        <Row align='middle'>
+          <Col align='middle' span={2}></Col>
+          <Col align='middle' span={8}><h1 style={headerStyle}>About Me</h1></Col>
+          <Col align='middle' span={8}></Col>
+          <Col align='middle' span={6}></Col>
+        </Row>
+        <Row align='middle'>
+          <Col align='middle' span={2}></Col>
+          <Col align='middle' span={8}><div className='AboutMeDiv'><p className='sectionHeader'>Hi, I'm Nathan. I'm a full stack developer located in Toronto. I have a serious passion for data and creating intuitive, simple and easy-to-use solutions for consuming and presenting that data in beautiful user interfaces.
+          <br/>
+          <br/>
+          I'm an obsessive problem solver, detail oriented and self motivated. I'm mostly self taught as a developer, through various online courses. I've also earned a Machine Learning certificate from the Brainstation 10 week boot camp. My previous work experience is in finance and I thoroughly enjoy blending my domain knowledge to create powerful applications.
 
 
-  return(
-    <div >
-      <Row align='middle'>
-        <Col align='middle' span={2}></Col>
-        <Col align='middle' span={8}><h1 style={headerStyle}>About Me</h1></Col>
-        <Col align='middle' span={8}></Col>
-        <Col align='middle' span={6}></Col>
-      </Row>
-      <Row align='middle'>
-        <Col align='middle' span={2}></Col>
-        <Col align='middle' span={8}><div className='AboutMeDiv'><p className='sectionHeader'>Hi, I'm Nathan. I'm a full stack developer located in Toronto. I have a serious passion for data and creating intuitive, simple and easy-to-use solutions for consuming and presenting that data in beautiful user interfaces.
-        <br/>
-        <br/>
-        I'm an obsessive problem solver, detail oriented and self motivated. I'm mostly self taught as a developer, through various online courses. I've also earned a Machine Learning certificate from the Brainstation 10 week boot camp. My previous work experience is in finance and I thoroughly enjoy blending my domain knowledge to create powerful applications.
+
+          </p></div></Col>
+          <Col align='middle' span={14}>
+          <Image
+              style={imageStyle}
+              width={'40%'}
+              src={officer}
+              preview={false}
+            />
+            </Col>
+
+        </Row>
+        <Row align='middle'>
+          <Col align='middle' span={2}></Col>
+          <Col align='middle' span={8}>
+
+          </Col>
+          <Col align='middle' span={8}></Col>
+          <Col align='middle' span={6}></Col>
+        </Row>
+        <Row>
+
+        </Row>
+
+
+      </div>
 
 
 
-        </p></div></Col>
-        <Col align='middle' span={14}>
-        <Image
-            style={imageStyle}
-            width={'40%'}
-            src={officer}
-            preview={false}
-          />
+    )
+  }
+  else{
+    return(
+      <div >
+        <Row align='middle'>
+
+          <Col align='middle' span={24}>
+            <h1 style={headerStyle}>About Me</h1>
+
+
           </Col>
 
-      </Row>
-      <Row align='middle'>
-        <Col align='middle' span={2}></Col>
-        <Col align='middle' span={8}>
+        </Row>
+        <Row align='middle'>
 
-        </Col>
-        <Col align='middle' span={8}></Col>
-        <Col align='middle' span={6}></Col>
-      </Row>
-      <Row>
-
-      </Row>
-
-
-    </div>
+          <Col align='middle' span={24}><div className='AboutMeDiv'><p className='sectionHeader'>Hi, I'm Nathan. I'm a full stack developer located in Toronto. I have a serious passion for data and creating intuitive, simple and easy-to-use solutions for consuming and presenting that data in beautiful user interfaces.
+          <br/>
+          <br/>
+          I'm an obsessive problem solver, detail oriented and self motivated. I'm mostly self taught as a developer, through various online courses. I've also earned a Machine Learning certificate from the Brainstation 10 week boot camp. My previous work experience is in finance and I thoroughly enjoy blending my domain knowledge to create powerful applications.
 
 
 
-  )
+          </p></div></Col>
+
+          <Col align='middle' span={14}>
+
+            </Col>
+
+        </Row>
+        <Row align='middle'>
+          <Col align='middle' span={2}></Col>
+          <Col align='middle' span={8}>
+
+          </Col>
+          <Col align='middle' span={8}></Col>
+          <Col align='middle' span={6}></Col>
+        </Row>
+        <Row>
+
+        </Row>
+
+
+      </div>
+
+    )
+  }
+
 }
 
 

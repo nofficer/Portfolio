@@ -3,6 +3,8 @@ import React, { useEffect } from 'react';
 import '../../App.css'
 import SVG3DTagCloud from '3d-word-cloud'
 
+import WindowSize from '../Util/WindowSize'
+
 var entries = [
 
     { label: 'React', url: '', target: '_top', tooltip: 'Lorem ipsum' },
@@ -26,6 +28,8 @@ var entries = [
 
 
 ];
+
+
 
 var settings = {
 
@@ -63,8 +67,49 @@ var settings = {
 
 };
 
+var mobileSettings = {
+
+    entries: entries,
+    width: 200,
+    height: 200,
+    radius: '65%',
+    radiusMin: 75,
+    bgDraw: false,
+    bgColor: '#111',
+    opacityOver: 1.00,
+    opacityOut: 0.5,
+    opacitySpeed: 6,
+    fov: 800,
+    speed: 0.5,
+    fontFamily: 'Tourney',
+    fontSize: '9',
+    fontColor: '#fa541c',
+    fontWeight: 'bold',//bold
+    fontStyle: 'normal',//italic
+    fontStretch: 'normal',//wider, narrower, ultra-condensed, extra-condensed, condensed, semi-condensed, semi-expanded, expanded, extra-expanded, ultra-expanded
+    fontToUpperCase: true,
+    tooltipFontFamily: 'Oswald, Arial, sans-serif',
+    tooltipFontSize: '11',
+    tooltipFontColor: '#fff',
+    tooltipFontWeight: 'normal',//bold
+    tooltipFontStyle: 'normal',//italic
+    tooltipFontStretch: 'normal',//wider, narrower, ultra-condensed, extra-condensed, condensed, semi-condensed, semi-expanded, expanded, extra-expanded, ultra-expanded
+    tooltipFontToUpperCase: false,
+    tooltipTextAnchor: 'left',
+    tooltipDiffX: 0,
+    tooltipDiffY: 10,
+    animatingSpeed: 0.001,
+    animatingRadiusLimit: 0
+
+};
+
 const SkillsMatrix = () => {
+  const windowWidth = WindowSize().width
+  if(windowWidth<600){
+    settings = mobileSettings
+  }
   useEffect(() => {
+
     var svg3DTagCloud = new SVG3DTagCloud( document.getElementById( 'holder'  ), settings );
   }, [])
 

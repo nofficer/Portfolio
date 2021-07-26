@@ -2,6 +2,37 @@
 @import url('https://fonts.googleapis.com/css2?family=Tourney&display=swap');
 
 
+/* const backStyle = {
+
+  backgroundImage: `url(${background})`,
+  webkitBackgroundSize: 'cover',
+  mozBackgroundSize: 'cover',
+  oBackgroundSize: 'cover',
+  backgroundSize: 'cover',
+  height: '100vh',
+  backgroundPosition: 'top center'
+} */
+
+
+
+
+body {
+  background-image: url('./Background.jpg');
+  height:100%;
+  background-size:100%;
+  -webkit-background-size: 100%;
+  -moz-background-size: 100%;
+  -o-background-size: 100%;
+
+}
+
+
+
+html {
+  height: 100vh; /* set viewport constraint */
+  min-height: 100%; /* enforce height */
+}
+
 .SMDiv {
   border-radius:50%;
 
@@ -28,6 +59,25 @@
   border-radius:25px;
   background-color: #ffa39e;
   color: #08979c;
+
+
+}
+
+
+
+.ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item:hover::after,
+.ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-submenu:hover::after,
+.ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item-active::after,
+.ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-submenu-active::after,
+.ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item-open::after,
+.ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-submenu-open::after,
+.ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item-selected::after,
+.ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-submenu-selected::after {
+  border-bottom: 0px solid white
+}
+
+.ant-menu-overflow-item > .ant-menu-overflow-item:hover::after,
+.ant-menu-item-active > .ant-menu-item-active:hover::after {
 
 }
 
