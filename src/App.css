@@ -2,9 +2,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Tourney&display=swap');
 
 
+.SMDiv {
+  border-radius:50%;
+
+  opacity:1;
+  width:480px;
+  height:480px;
+}
+
 .ant-menu.ant-menu-dark .ant-menu-item-selected.changeSelectedColor {
   opacity:0.5;
-  background-color: #08979c; /*Overriden property*/
+  background-color: #ffa39e; /*Overriden property*/
   border-radius:25px;
 }
 
@@ -12,13 +20,13 @@
 .ant-menu > .ant-menu-item.changeSelectedColor:hover,
 .ant-menu > .ant-menu-submenu:hover,
 .ant-menu > .ant-menu-item-active,
-.ant-menu> .ant-menu-submenu-active,
+.ant-menu > .ant-menu-submenu-active,
 .ant-menu > .ant-menu-item-open,
-.ant-menu> .ant-menu-submenu-open,
+.ant-menu > .ant-menu-submenu-open,
 .ant-menu > .ant-menu-item-selected,
 .ant-menu > .ant-menu-submenu-selected {
   border-radius:25px;
-  background-color: #08979c;
+  background-color: #ffa39e;
   color: #08979c;
 
 }

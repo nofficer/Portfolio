@@ -1,6 +1,6 @@
 import React from 'react';
-
-import { useHistory } from "react-router-dom";
+import '../App.css'
+import { useHistory,useLocation } from "react-router-dom";
 import { Menu } from 'antd';
 
 const headerStyle ={
@@ -9,12 +9,22 @@ const headerStyle ={
 }
 
 const textStyle = {
-  color:'#262626'
+  color:'#262626',
+  fontFamily: 'Tourney'
 }
 
+const routeMap = {
+  '/':'home',
+  '/about':'about',
+  '/projects':'projects',
+  '/home':'home',
+  '/resume':'resume'
+}
 
 const Header = () => {
   let history = useHistory();
+  const location = useLocation()
+  const pathLocation = location.pathname
 
   function handleClick(e) {
 
@@ -22,7 +32,7 @@ const Header = () => {
   }
 
   return (
-    <Menu theme='dark' style={headerStyle} onClick={handleClick} mode="horizontal">
+    <Menu theme='dark' defaultSelectedKeys={[routeMap[pathLocation]]} style={headerStyle} onClick={handleClick} mode="horizontal">
         <Menu.Item className='changeSelectedColor' style={textStyle} key="home">
           Home
         </Menu.Item>
@@ -32,6 +42,10 @@ const Header = () => {
         <Menu.Item className='changeSelectedColor' style={textStyle} key="projects">
           Projects
         </Menu.Item>
+        <Menu.Item className='changeSelectedColor' style={textStyle} key="resume">
+          Resume
+        </Menu.Item>
+
           </Menu>
   )
 }

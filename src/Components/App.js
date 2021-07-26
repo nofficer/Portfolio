@@ -7,7 +7,7 @@ import Projects from './Projects/Projects'
 import AboutMe from './AboutMe/AboutMe'
 import '../App.css';
 import background from './Background.jpg'
-
+import Resume from './Resume/Resume'
 
 const backStyle = {
 
@@ -16,7 +16,8 @@ const backStyle = {
   mozBackgroundSize: 'cover',
   oBackgroundSize: 'cover',
   backgroundSize: 'cover',
-  height: '100vh'
+  height: '100vh',
+  backgroundPosition: 'top center'
 }
 
 
@@ -34,7 +35,7 @@ const App = () => {
             <Route path ='/home' exact component={Landing}/>
             <Route path ='/about' exact component={AboutMe}/>
             <Route path ='/projects' exact component={Projects}/>
-
+            <Route path ='/resume' exact component={Resume}/>
           </Switch>
           </div>
         </div>

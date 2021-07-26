@@ -26,7 +26,7 @@ const imageStyle = {
 
 
 
-const Projects = () => {
+const AboutMe = () => {
 
 
   return(
@@ -39,7 +39,7 @@ const Projects = () => {
       </Row>
       <Row align='middle'>
         <Col align='middle' span={2}></Col>
-        <Col align='middle' span={8}><div className='AboutMeDiv'><p className='sectionHeader'>Hi I'm Nathan. I'm a full stack developer located in Toronto. I have a serious passion for data and creating intuitive, simple and easy-to-use solutions for consuming and presenting that data in beautiful user interfaces.
+        <Col align='middle' span={8}><div className='AboutMeDiv'><p className='sectionHeader'>Hi, I'm Nathan. I'm a full stack developer located in Toronto. I have a serious passion for data and creating intuitive, simple and easy-to-use solutions for consuming and presenting that data in beautiful user interfaces.
         <br/>
         <br/>
         I'm an obsessive problem solver, detail oriented and self motivated. I'm mostly self taught as a developer, through various online courses. I've also earned a Machine Learning certificate from the Brainstation 10 week boot camp. My previous work experience is in finance and I thoroughly enjoy blending my domain knowledge to create powerful applications.
@@ -65,6 +65,9 @@ const Projects = () => {
         <Col align='middle' span={8}></Col>
         <Col align='middle' span={6}></Col>
       </Row>
+      <Row>
+
+      </Row>
 
 
     </div>
@@ -76,4 +79,6 @@ const Projects = () => {
 
 
 
-export default Projects
+
+
+export default AboutMe

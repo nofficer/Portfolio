@@ -29,7 +29,8 @@ const imageStyle = {
 
 const headerStyle = {
   fontSize: '40px',
-  color: '#fff'
+  color: '#fff',
+  fontFamily: 'Tourney'
 }
 
 const linkStyleGreen = {
@@ -55,7 +56,7 @@ const linkStyleRed = {
 
 const ProjectCarousel = () => {
   return(
-    <Carousel effect='slide' >
+    <Carousel effect='slide' autoplay >
 
       <div className='AboutMeDiv' >
         <h3 style={contentStyle}>
@@ -107,16 +108,7 @@ const ProjectCarousel = () => {
               EasyComp Demo
 
               </a>
-              <a  href='https://github.com/nofficer/EasyComp_BE' style={linkStyleBlue}>
 
-              EasyComp Backend Repo
-
-              </a>
-              <a  href='https://github.com/nofficer/EasyComp_FrontEnd' style={linkStyleRed}>
-
-              EasyComp Front-End Repo
-
-              </a>
 
             </Row>
 
@@ -162,7 +154,7 @@ const ProjectCarousel = () => {
 
           </Row>
           <h2 style={headerStyle}>
-          Officerchess
+          OfficerChess
           </h2>
           <Row>
 
@@ -234,7 +226,7 @@ const ProjectCarousel = () => {
 
           </Row>
           <h2 style={headerStyle}>
-          This Portfolio
+          NathanOfficer.com
           </h2>
           <Row>
 
