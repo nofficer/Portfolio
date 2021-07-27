@@ -1,6 +1,6 @@
-import { Carousel } from 'antd';
-import { Image } from 'antd';
-import { Row, Col } from 'antd';
+
+
+import { Row, Col,Image,Carousel } from 'antd';
 
 import ezcomp from './ezcomp-2.PNG'
 import officerchess from './officerchess.PNG'
@@ -8,7 +8,8 @@ import portfolioPlaceholder from './portfolio.PNG'
 
 
 import WindowSize from '../Util/WindowSize'
-
+import React, { useRef } from 'react';
+import sleep from './Sleeper'
 
 const contentStyle = {
   height: '100%',
@@ -18,37 +19,30 @@ const contentStyle = {
   background: '#000000',
   backgroundColor: 'transparent',
 };
-
 const textStyle = {
   color: '#fff'
 }
-
 const imageStyle = {
   margin:'5vh',
   borderRadius:'25px'
 }
-
 const headerStyle = {
   fontSize: '40px',
   color: '#fff',
   fontFamily: 'Tourney'
 }
-
 const linkStyleGreen = {
   color: '#52c41a',
   margin:'auto'
 }
-
 const linkStyleBlue = {
   color: '#1890ff',
   margin:'auto'
 }
-
 const linkStyleGold = {
   color: '#faad14',
   margin:'auto'
 }
-
 const linkStyleRed = {
   color: '#f5222d',
   margin:'auto'
@@ -56,13 +50,21 @@ const linkStyleRed = {
 
 
 const ProjectCarousel = () => {
+  const ref = useRef()
+
+  // To detect whether we are on mobile
   var size = WindowSize()
-
   var width = size.width
-
+  const props = {
+      dots: true,
+      infinite: true,
+      speed: 500,
+      slidesToShow: 1,
+      slidesToScroll: 1
+    };
   if(width>600){
     return(
-      <Carousel effect='slide' autoplay >
+      <Carousel accessibility pauseOnHover pauseOnFocus autoplaySpeed={15000} autoplay>
 
         <div className='AboutMeDiv' >
           <h3 style={contentStyle}>
@@ -258,7 +260,7 @@ const ProjectCarousel = () => {
   }
   else{
     return(
-      <Carousel autoplay effect='slide'>
+      <Carousel pauseOnHover pauseOnFocus autoplaySpeed={15000} autoplay>
         <div className='AboutMeDiv' >
           <Row align='middle'>
             <Col align='middle' span={24}>
