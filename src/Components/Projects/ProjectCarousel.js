@@ -49,6 +49,8 @@ const linkStyleRed = {
 }
 
 
+
+
 const ProjectCarousel = () => {
   const ref = useRef()
 
@@ -104,12 +106,26 @@ const ProjectCarousel = () => {
               </Row>
               <Row >
                 <br/>
-                <a  href='https://fe-dot-easycomp-demo.uc.r.appspot.com' style={linkStyleGreen}>
+                <a className='easycomplink'  href='https://fe-dot-easycomp-demo.uc.r.appspot.com' >
 
                 EasyComp Demo
 
                 </a>
 
+              </Row>
+              <Row >
+                <br/>
+                  <p className='showcreds' >
+                  User: Manager Pass: hello
+
+                  </p>
+              </Row>
+              <Row >
+                <br/>
+                  <p style={{'margin':'auto',fontSize:'8px'}}>
+
+
+                  </p>
               </Row>
 
             </Col>
@@ -291,6 +307,13 @@ const ProjectCarousel = () => {
                 EasyComp Demo
               </a>
             </Col>
+          </Row>
+          <Row >
+            <br/>
+              <p className='showcredsmobile' >
+              User: Manager Pass: hello
+
+              </p>
           </Row>
           <Row align='middle'>
             <br/>

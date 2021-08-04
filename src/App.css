@@ -14,6 +14,28 @@
 } */
 
 
+p.showcreds {
+  margin:auto;
+  opacity:0;
+}
+
+p.showcredsmobile {
+  margin:auto;
+  opacity:1;
+}
+
+
+p.showcreds:hover {
+
+  opacity:.75;
+}
+
+a.easycomplink {
+  color: #52c41a;
+  margin:auto
+}
+
+
 
 
 body {
