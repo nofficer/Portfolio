@@ -25,6 +25,7 @@ var entries = [
     { label: 'YOLO Darknet', url: '', target: '_top', tooltip: 'Sed diam' },
     { label: 'Flask', url: '', target: '_top', tooltip: 'Sed diam' },
     { label: 'Machine Learning', url: '', target: '_top', tooltip: 'Sed diam' },
+    { label: 'React-Native', url: '', target: '_top', tooltip: 'Sed diam' }
 
 
 ];

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import resumePdf from './resume_pdf.pdf'
 
-import resume from './Resume.PNG'
+import resume from './Resume_v2.PNG'
 import { Row, Col, Image } from 'antd';
 import '../../App.css'
 

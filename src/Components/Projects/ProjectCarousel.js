@@ -5,7 +5,7 @@ import { Row, Col,Image,Carousel } from 'antd';
 import ezcomp from './ezcomp-2.PNG'
 import officerchess from './officerchess.PNG'
 import portfolioPlaceholder from './portfolio.PNG'
-
+import easyCompMobile from './easyCompMobile.png'
 
 import WindowSize from '../Util/WindowSize'
 import React, { useRef } from 'react';
@@ -106,10 +106,16 @@ const ProjectCarousel = () => {
               </Row>
               <Row >
                 <br/>
-                <a className='easycomplink'  href='https://fe-dot-easycomp-demo.uc.r.appspot.com' >
+                <a className='easycomplink'  href='https://ui-dot-portfolio-320419.nn.r.appspot.com/' >
 
                 EasyComp Demo
 
+                </a>
+
+
+                <a  href='https://easycomp.ca' style={linkStyleBlue}>
+
+                EasyComp Website
                 </a>
 
               </Row>
@@ -271,6 +277,71 @@ const ProjectCarousel = () => {
         </h3>
         </div>
 
+        <div className='AboutMeDiv'>
+        <h3 style={contentStyle}>
+        <Row>
+          {/*First give ourselves a bit of space*/}
+          <Col span={1}>
+          </Col>
+          {/*This is the image of the project*/}
+          <Col span={9}>
+
+
+
+          <Row>
+
+
+              <Image
+                style={imageStyle}
+                width={'100%'}
+                height={'100%'}
+                src={easyCompMobile}
+              />
+
+          </Row>
+
+          </Col>
+          <Col span={2}>
+          </Col>
+        {  /*This is where the image of the project ends
+          Next is the project title and description*/}
+          <Col span={12}>
+            <Row>
+              <br/>
+
+
+            </Row>
+            <h2 style={headerStyle}>
+            EasyComp Mobile
+            </h2>
+            <Row>
+
+            <p style={textStyle}>
+            The lightweight mobile version of the EasyComp Solution. Built with React-Native this enables your team to review their performance even when they're on the go!
+            </p>
+
+            </Row>
+            <Row >
+              <br/>
+
+              <a  href='https://easycomp.ca' style={linkStyleBlue}>
+
+              EasyComp Website
+
+              </a>
+
+
+
+            </Row>
+
+          </Col>
+        </Row>
+
+
+
+        </h3>
+        </div>
+
       </Carousel>
     )
   }
@@ -302,9 +373,16 @@ const ProjectCarousel = () => {
             </Col>
           </Row>
           <Row align='middle'>
-            <Col align='middle' span={24}>
-              <a  href='https://fe-dot-easycomp-demo.uc.r.appspot.com' style={linkStyleGreen}>
+            <Col align='middle' span={12}>
+              <a  href='https://ui-dot-portfolio-320419.nn.r.appspot.com/' style={linkStyleGreen}>
                 EasyComp Demo
+              </a>
+
+            </Col>
+            <Col align='middle' span={12}>
+              <a  href='https://easycomp.ca' style={linkStyleBlue}>
+
+                EasyComp Website
               </a>
             </Col>
           </Row>
@@ -401,6 +479,46 @@ const ProjectCarousel = () => {
           </Row>
           <Row align='middle'>
             <br/>
+            <br/>
+          </Row>
+        </div>
+
+        <div className='AboutMeDiv' >
+          <Row align='middle'>
+            <Col align='middle' span={24}>
+              <h2 style={headerStyle}>
+                EasyComp Mobile
+              </h2>
+            </Col>
+          </Row>
+          <Row align='middle'>
+            <Col align='middle' span={24}>
+              <Image
+
+                width={'100%'}
+                src={easyCompMobile}
+              />
+            </Col>
+          </Row>
+          <Row align='middle'>
+            <Col align='middle' span={24}>
+              <p style={textStyle}>
+              The lightweight mobile version of the EasyComp Solution. Built with React-Native this enables your team to review their performance even when they're on the go!
+              </p>
+            </Col>
+          </Row>
+          <Row align='middle'>
+            <Col align='middle' span={24}>
+            <a  href='https://easycomp.ca' style={linkStyleBlue}>
+
+            EasyComp Website
+            </a>
+            </Col>
+          </Row>
+          <Row align='middle'>
+            <br/>
+
+
             <br/>
           </Row>
         </div>
