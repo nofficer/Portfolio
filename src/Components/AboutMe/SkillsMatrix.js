@@ -4,6 +4,8 @@ import '../../App.css'
 import SVG3DTagCloud from '3d-word-cloud'
 
 import WindowSize from '../Util/WindowSize'
+import { fontColor } from '../../globalvars.js'
+
 
 var entries = [
 
@@ -48,7 +50,7 @@ var settings = {
     speed: 0.5,
     fontFamily: 'Tourney',
     fontSize: '20',
-    fontColor: '#fa541c',
+    fontColor: fontColor,
     fontWeight: 'bold',//bold
     fontStyle: 'normal',//italic
     fontStretch: 'normal',//wider, narrower, ultra-condensed, extra-condensed, condensed, semi-condensed, semi-expanded, expanded, extra-expanded, ultra-expanded

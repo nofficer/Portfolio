@@ -5,9 +5,11 @@ import { Row, Col } from 'antd';
 
 import WindowSize from '../Util/WindowSize'
 
+import { fontColor } from '../../globalvars.js'
+
 const headerStyle = {
   fontSize: '50px',
-  color: '#fa541c',
+  color: fontColor,
   fontFamily:'Tourney',
   marginTop:'4vh'
 }

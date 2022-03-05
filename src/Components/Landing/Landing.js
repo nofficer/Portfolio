@@ -8,20 +8,22 @@ import SkillsMatrix from '../AboutMe/SkillsMatrix'
 
 import WindowSize from '../Util/WindowSize'
 
+import { fontColor } from '../../globalvars.js'
+
 
 
 
 const headerStyle = {
   fontSize: '50px',
-  color: '#fa541c',
+  color: fontColor ,
   fontFamily:'Tourney',
   width: '100vh',
-  marginTop:'4vh'
+  marginTop:'6vh'
 }
 
 const mobileHeaderStyle ={
   fontSize: '30px',
-  color: '#fa541c',
+  color: fontColor,
   fontFamily:'Tourney',
   width: '100%',
   marginTop:'4vh'

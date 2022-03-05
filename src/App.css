@@ -65,8 +65,9 @@ html {
 
 .ant-menu.ant-menu-dark .ant-menu-item-selected.changeSelectedColor {
   opacity:0.5;
-  background-color: #ffa39e; /*Overriden property*/
+  background-color: #d9d9d9; /*Overriden property*/
   border-radius:25px;
+
 }
 
 /*Changes the color of the header tabs */
@@ -79,7 +80,7 @@ html {
 .ant-menu > .ant-menu-item-selected,
 .ant-menu > .ant-menu-submenu-selected {
   border-radius:25px;
-  background-color: #ffa39e;
+  background-color: rgba(255, 255, 255, 0.3);
   color: #08979c;
 
 

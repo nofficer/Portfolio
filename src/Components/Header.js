@@ -9,7 +9,7 @@ const headerStyle ={
 }
 
 const textStyle = {
-  color:'#262626',
+  color:'white',
   fontFamily: 'Tourney'
 }
 
